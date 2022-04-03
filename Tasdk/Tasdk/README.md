@@ -1,4 +1,4 @@
 1. ENUM-lar dynamic-di reflection ile elemisem 
 2. Encapsulation vaxti hec bir propery-e max limit qoymamisam cunki :
-	Лимиты есть только до тех пор пока мы их не переоделем
+	Р›РёРјРёС‚С‹ РµСЃС‚СЊ С‚РѕР»СЊРєРѕ РґРѕ С‚РµС… РїРѕСЂ РїРѕРєР° РјС‹ РёС… РЅРµ РїРµСЂРµРѕРґРµР»РµРј
 														-Sadiq 
