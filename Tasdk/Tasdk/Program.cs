@@ -31,6 +31,7 @@ namespace Tasdk
             } while (choise != 9);
         }
 
+        //CarOptions
         static void CarOptions()
         {
             byte choise;
@@ -58,9 +59,10 @@ namespace Tasdk
                         Console.WriteLine("Wrong Input");
                         break;
                 }
-            } while (choise != 0);
+            } while (choise != 9);
         }
 
+        //PlaneOptions
         static void PlaneOptions()
         {
             byte choise;
@@ -76,7 +78,7 @@ namespace Tasdk
                         plane = new Plane(NumberInput<double>("Wing length"), NumberInput<int>("Horse power"), NumberInput<double>("Tank size"), PlaneFuelType(), NumberInput<double>("Wheel thickness"));
                         break;
                     case 2:
-                        //todo
+                        AddPropsToPlane(plane);
                         break;
                     case 3:
                         plane.ShowInfo();
@@ -88,26 +90,26 @@ namespace Tasdk
                         Console.WriteLine("Wrong Input");
                         break;
                 }
-            } while (choise != 0);
+            } while (choise != 9);
         }
 
-
+        //BicycleOptions
         static void BicycleOptions()
         {
             byte choise;
             Console.WriteLine("You need to create Bicycle first");
-            Bicycle bicycle = new Bicycle(PedalType(),NumberInput<double>("Wheel thickness"));
+            Bicycle bicycle = new Bicycle(PedalType(),NumberInput<double>("Wheel thickness"),BicycleTransmissionType());
             do
             {
-                choise = NumberInput<byte>("1)Create Plane(Override)\n2)Add props \n3)Show Info\n4)Calculate avarange speed\n9)End\nChoise:");
+                choise = NumberInput<byte>("1)Create Bicycle(Override)\n2)Add props \n3)Show Info\n4)Calculate avarange speed\n9)End\nChoise:");
                 switch (choise)
                 {
                     case 9: break;
                     case 1:
-                        
+                        bicycle = new Bicycle(PedalType(), NumberInput<double>("Wheel thickness"), BicycleTransmissionType());
                         break;
                     case 2:
-                        //todo
+                        AddPropsToBicycle(bicycle);
                         break;
                     case 3:
                         bicycle.ShowInfo();
@@ -119,7 +121,7 @@ namespace Tasdk
                         Console.WriteLine("Wrong Input");
                         break;
                 }
-            } while (choise != 0);
+            } while (choise != 9);
         }
         //CarFuelType
         static string CarFuelType()
@@ -170,6 +172,21 @@ namespace Tasdk
             } while (true);
         }
 
+        //BicycleTransmissionType
+        static string BicycleTransmissionType()
+        {
+            byte choise;
+            StringBuilder stringBuilder = new StringBuilder();
+            foreach (var @enum in Enum.GetValues(typeof(Enums.BicycleTransmissionTypes)))
+                stringBuilder.Append($"{(int)@enum}){@enum.ToString()} ");
+            do
+            {
+                choise = NumberInput<byte>("-----------Transmission-----------\n" + stringBuilder + "\nChoise");
+                foreach (int @enum in Enum.GetValues(typeof(Enums.BicycleTransmissionTypes)))
+                    if (choise == @enum)
+                        return Enum.ToObject(Enums.BicycleTransmissionTypes.External.GetType(), (byte)@enum).ToString();
+            } while (true);
+        }
         //PedalType
         static string PedalType()
         {
@@ -217,6 +234,73 @@ namespace Tasdk
             {
                 temp = NumberInput<double>("Drive Time ");
                 car.DriveTime = temp;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                goto Point3;
+            }
+        }
+
+        //AddPropsToPlane
+        static void AddPropsToPlane(Plane plane)
+        {
+            double temp;
+        Point1:
+            try
+            {
+                temp = NumberInput<double>("Current Oil ");
+                plane.CurrentOil = temp;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                goto Point1;
+            }
+        Point2:
+            try
+            {
+                temp = NumberInput<double>("Drive Parh ");
+                plane.DrivePath = temp;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                goto Point2;
+            }
+        Point3:
+            try
+            {
+                temp = NumberInput<double>("Drive Time ");
+                plane.DriveTime = temp;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                goto Point3;
+            }
+        }
+
+        //AddPropsToBicycle
+        static void AddPropsToBicycle(Bicycle bicycle)
+        {
+            double temp;
+        Point2:
+            try
+            {
+                temp = NumberInput<double>("Drive Parh ");
+                bicycle.DrivePath = temp;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                goto Point2;
+            }
+        Point3:
+            try
+            {
+                temp = NumberInput<double>("Drive Time ");
+                bicycle.DriveTime = temp;
             }
             catch (Exception ex)
             {

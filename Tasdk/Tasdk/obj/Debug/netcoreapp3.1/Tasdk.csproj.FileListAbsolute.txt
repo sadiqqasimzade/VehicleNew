@@ -40,3 +40,17 @@ C:\Users\tu6w5xs1c\Desktop\task31-3-2022\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tas
 C:\Users\tu6w5xs1c\Desktop\task31-3-2022\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.dll
 C:\Users\tu6w5xs1c\Desktop\task31-3-2022\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.pdb
 C:\Users\tu6w5xs1c\Desktop\task31-3-2022\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.genruntimeconfig.cache
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\bin\Debug\netcoreapp3.1\Tasdk.exe
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\bin\Debug\netcoreapp3.1\Tasdk.deps.json
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\bin\Debug\netcoreapp3.1\Tasdk.runtimeconfig.json
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\bin\Debug\netcoreapp3.1\Tasdk.runtimeconfig.dev.json
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\bin\Debug\netcoreapp3.1\Tasdk.dll
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\bin\Debug\netcoreapp3.1\Tasdk.pdb
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.AssemblyInfo.cs
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.dll
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.pdb
+C:\Users\admin\Desktop\git\Task\Tasdk\Tasdk\obj\Debug\netcoreapp3.1\Tasdk.genruntimeconfig.cache

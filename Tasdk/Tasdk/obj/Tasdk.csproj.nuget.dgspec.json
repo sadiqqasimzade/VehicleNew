@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\git\\task31-3-2022\\Tasdk\\Tasdk\\Tasdk.csproj": {}
+    "C:\\Users\\admin\\Desktop\\git\\Task\\Tasdk\\Tasdk\\Tasdk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\git\\task31-3-2022\\Tasdk\\Tasdk\\Tasdk.csproj": {
+    "C:\\Users\\admin\\Desktop\\git\\Task\\Tasdk\\Tasdk\\Tasdk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\git\\task31-3-2022\\Tasdk\\Tasdk\\Tasdk.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\git\\Task\\Tasdk\\Tasdk\\Tasdk.csproj",
         "projectName": "Tasdk",
-        "projectPath": "C:\\Users\\admin\\Desktop\\git\\task31-3-2022\\Tasdk\\Tasdk\\Tasdk.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\git\\Task\\Tasdk\\Tasdk\\Tasdk.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\git\\task31-3-2022\\Tasdk\\Tasdk\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\git\\Task\\Tasdk\\Tasdk\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
