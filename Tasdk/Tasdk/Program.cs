@@ -2,6 +2,7 @@
 using Tasdk.Models;
 using System.Reflection;
 using System.Text;
+using Tasdk.Exceptions;
 namespace Tasdk
 {
     class Program
@@ -211,7 +212,9 @@ namespace Tasdk
             try
             {
                 temp = NumberInput<double>("Current Oil ");
-                car.CurrentOil = temp;
+                if (temp < car.TankSize)
+                    car.CurrentOil = temp;
+                else throw new NoSpeaceAvailableException();
             }
             catch (Exception ex)
             {
@@ -250,7 +253,9 @@ namespace Tasdk
             try
             {
                 temp = NumberInput<double>("Current Oil ");
-                plane.CurrentOil = temp;
+                if (temp <= plane.TankSize)
+                    plane.CurrentOil = temp;
+                else throw new NoSpeaceAvailableException();
             }
             catch (Exception ex)
             {

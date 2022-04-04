@@ -33,7 +33,7 @@ namespace Tasdk.Models
             set
             {
                 if (value < TankSize) _currentOil = NegativeCheck(value);
-                else throw new Exception("Cant be greater than Tank size");
+                else throw new NoSpeaceAvailableException();
             }
         }
         public string FuelType { get { return _fuelType; } set { _fuelType = StringCheck(value); } }
